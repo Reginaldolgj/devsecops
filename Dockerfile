@@ -6,6 +6,6 @@ COPY . .
 
 RUN npm install && npm install express
 
-CMD ["node", "start"]
+CMD ["npm", "start"]
 
 EXPOSE 3000
