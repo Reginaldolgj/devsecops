@@ -8,6 +8,7 @@ app.get("/", (request, response) => {
   return response.send({ message: "Olá mundo!" });
 });
 
+module.exports = app;
 
 app.listen(port, () => {
 

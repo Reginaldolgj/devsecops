@@ -1,5 +1,5 @@
-import request from "supertest";
-import app from "./index.js";
+const request = require("supertest");
+const app = require("./index.js");
 
 describe("GET /", () => {
   test("O / deve ser acessível", async () => {
@@ -10,7 +10,7 @@ describe("GET /", () => {
 
 describe("GET /user", () => {
     test("O /user nao existe", async () => {
-      const response = await request(app).get("/");
-      expect(response.statusCode).toBe(400);
+      const response = await request(app).get("/user"); // Corrigido para /user
+      expect(response.statusCode).toBe(404);
     });
 });
