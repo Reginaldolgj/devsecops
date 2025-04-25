@@ -1,6 +1,7 @@
 const request = require("supertest");
 const app = require("./index.js");
 
+
 describe("GET /", () => {
   test("O / deve ser acessível", async () => {
     const response = await request(app).get("/");
