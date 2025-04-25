@@ -10,6 +10,7 @@ app.get("/", (request, response) => {
 
 module.exports = app;
 
+// teste
 // app.listen(port, () => {
 
 //     console.log(`Servidor na 🚪: ${port}`)
