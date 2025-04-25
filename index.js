@@ -10,8 +10,8 @@ app.get("/", (request, response) => {
 
 module.exports = app;
 
-app.listen(port, () => {
+// app.listen(port, () => {
 
-    console.log(`Servidor na 🚪: ${port}`)
-})
+//     console.log(`Servidor na 🚪: ${port}`)
+// })
 
